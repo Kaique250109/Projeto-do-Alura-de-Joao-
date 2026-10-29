@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CONecta Aí 2.0 — aprenda tecnologia com desafios, flashcards e trilhas.">
+  <title>CONecta Aí 2.0 | João Victor — 3E</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <header class="topbar">
+    <a class="brand" href="#inicio"><span class="brand-mark">C<span>✦</span></span><span>CONecta<span class="brand-light">Aí</span><small>ACADEMIA DIGITAL</small></span></a>
+    <nav><a href="#inicio">Início</a><a href="#trilhas">Trilhas</a><a href="#desafio">Desafio</a><a href="#sobre">Sobre</a></nav>
+    <button id="themeBtn" class="theme-btn" aria-label="Alternar tema">☼</button>
+  </header>
+  <main>
+    <section class="hero wrap" id="inicio">
+      <div class="hero-copy">
+        <div class="status-line"><span></span> SUA JORNADA COMEÇA AQUI</div>
+        <h1>O futuro é<br>feito de <em>código.</em></h1>
+        <p>Explore o mundo da tecnologia, aprenda no seu ritmo e transforme curiosidade em habilidade. Um passo de cada vez.</p>
+        <div class="hero-buttons"><a href="#trilhas" class="btn btn-main">Explorar trilhas <b>↗</b></a><a href="#desafio" class="btn btn-glass">Testar conhecimentos <span>→</span></a></div>
+        <div class="hero-note"><div class="stack-avatars"><span>H</span><span>C</span><span>JS</span></div><span>Aprenda fazendo. Evolua praticando.</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-1"></div><div class="orbit orbit-2"></div>
+        <div class="code-window">
+          <div class="window-bar"><div class="window-dots"><i></i><i></i><i></i></div><span>meu-primeiro-site.js</span><span class="window-lock">⌘</span></div>
+          <div class="code-lines">
+            <p><span class="ln">01</span><span class="purple">const</span> estudante = {</p>
+            <p><span class="ln">02</span>&nbsp;&nbsp;nome: <span class="green">'João Victor'</span>,</p>
+            <p><span class="ln">03</span>&nbsp;&nbsp;turma: <span class="green">'3E'</span>,</p>
+            <p><span class="ln">04</span>&nbsp;&nbsp;objetivo: <span class="green">'criar o futuro'</span></p>
+            <p><span class="ln">05</span>};</p>
+            <p class="code-space"><span class="ln">06</span><span class="purple">function</span> <span class="blue">aprender</span>() {</p>
+            <p><span class="ln">07</span>&nbsp;&nbsp;<span class="purple">return</span> <span class="green">'nunca parar!'</span>;</p>
+            <p><span class="ln">08</span>}</p>
+            <p class="code-run"><span>▶</span> programa executado com sucesso</p>
+          </div>
+        </div>
+        <div class="float-chip chip-xp"><span>✦</span><div><b id="heroXp">0 XP</b><small>pontos conquistados</small></div></div>
+        <div class="float-chip chip-progress"><div class="mini-ring">↗</div><div><b>Em evolução</b><small>Seu próximo nível espera</small></div></div>
+        <div class="visual-caption">DESENVOLVA • EXPLORE • CONECTE</div>
+      </div>
+    </section>
+
+    <section class="quick-stats wrap">
+      <div class="quick-stat"><span class="stat-icon cyan">⌘</span><div><strong>12</strong><small>Flashcards para explorar</small></div></div>
+      <div class="quick-stat"><span class="stat-icon violet">◎</span><div><strong>04</strong><small>Trilhas de tecnologia</small></div></div>
+      <div class="quick-stat"><span class="stat-icon orange">⚡</span><div><strong id="statXP">0 XP</strong><small>Seu progresso atual</small></div></div>
+      <div class="quick-stat"><span class="stat-icon green">✓</span><div><strong id="statLearned">0</strong><small>Cards aprendidos</small></div></div>
+    </section>
+
+    <section class="wrap section" id="trilhas">
+      <div class="section-title"><div><span class="kicker">01 / CAMINHO DE APRENDIZADO</span><h2>Escolha sua próxima <em>missão.</em></h2><p>Conhecimento se constrói na prática. Comece pelos fundamentos e avance no seu tempo.</p></div><span class="section-index">01—04</span></div>
+      <div class="path-grid">
+        <article class="path-card path-featured"><div class="path-top"><span class="path-icon">〈/〉</span><span class="path-tag">COMECE AQUI</span></div><span class="path-num">TRILHA 01</span><h3>HTML essencial</h3><p>Construa a estrutura das suas páginas e dê sentido ao conteúdo.</p><div class="path-bottom"><span>03 conceitos</span><button class="text-link" data-filter="HTML">Estudar agora ↗</button></div></article>
+        <article class="path-card"><div class="path-top"><span class="path-icon purple-icon">✳</span><span class="path-tag muted-tag">VISUAL</span></div><span class="path-num">TRILHA 02</span><h3>CSS criativo</h3><p>Trabalhe cores, fontes, espaçamento e layouts que se adaptam.</p><div class="path-bottom"><span>04 conceitos</span><button class="text-link" data-filter="CSS">Explorar ↗</button></div></article>
+        <article class="path-card"><div class="path-top"><span class="path-icon orange-icon">ϟ</span><span class="path-tag muted-tag">INTERAÇÃO</span></div><span class="path-num">TRILHA 03</span><h3>JavaScript</h3><p>Adicione comportamento e transforme cliques em ações.</p><div class="path-bottom"><span>01 conceito</span><button class="text-link" data-filter="JavaScript">Explorar ↗</button></div></article>
+        <article class="path-card"><div class="path-top"><span class="path-icon green-icon">⌘</span><span class="path-tag muted-tag">FERRAMENTAS</span></div><span class="path-num">TRILHA 04</span><h3>Web & Git</h3><p>Conheça a web e aprenda a cuidar das versões dos seus projetos.</p><div class="path-bottom"><span>03 conceitos</span><button class="text-link" data-filter="Web">Explorar ↗</button></div></article>
+      </div>
+    </section>
+
+    <section class="study-section" id="flashcards"><div class="wrap section">
+      <div class="section-title"><div><span class="kicker">02 / APRENDER ATIVAMENTE</span><h2>Um card de cada vez.</h2><p>Leia a pergunta, tente responder e vire o card para conferir.</p></div><div class="study-count"><span id="studyCount">01</span><small>/ 12</small></div></div>
+      <div class="flash-layout">
+        <div class="flash-side">
+          <div class="flash-meta"><span id="flashCategory">HTML • FUNDAMENTOS</span><span id="flashFavLabel">☆ NÃO FAVORITADO</span></div>
+          <button class="study-card" id="studyCard" aria-label="Virar flashcard">
+            <div class="study-card-front"><span class="big-symbol" id="flashIcon">&lt;/&gt;</span><span class="question-label">PERGUNTA</span><h3 id="flashQuestion">O que é HTML?</h3><span class="tap-hint">Toque para revelar a resposta <b>↻</b></span></div>
+            <div class="study-card-back"><span class="question-label">RESPOSTA</span><h3 id="flashAnswer"></h3><p id="flashTip"></p><span class="tap-hint">Toque para voltar <b>↻</b></span></div>
+          </button>
+          <div class="flash-controls"><button id="backCard" class="icon-btn" aria-label="Card anterior">←</button><button id="markLearned" class="btn btn-main">✓ Marcar como aprendido</button><button id="toggleFav" class="icon-btn" aria-label="Favoritar card">☆</button><button id="nextCard" class="icon-btn" aria-label="Próximo card">→</button></div>
+          <div class="flash-tools"><button id="mixCards">⤨ Embaralhar cards</button><button id="showFavs">☆ Ver favoritos</button><button id="clearFilter">Mostrar todos</button></div>
+        </div>
+        <aside class="learning-panel"><div class="panel-heading"><span class="kicker">SEU DESEMPENHO</span><span class="live-dot"></span></div><h3>Progresso da sessão</h3><div class="progress-numbers"><strong id="progressText">0%</strong><span id="learnedText">0 de 12 cards</span></div><div class="progress-line"><span id="progressLine"></span></div><div class="panel-divider"></div><div class="mini-achievements"><span class="achievement-badge">🌱</span><div><strong>Primeiros passos</strong><small>Aprenda 2 cards para desbloquear</small></div><span id="firstBadge">🔒</span></div><div class="mini-achievements"><span class="achievement-badge">⚡</span><div><strong>Ritmo de código</strong><small>Aprenda 6 cards para desbloquear</small></div><span id="secondBadge">🔒</span></div><div class="mini-achievements"><span class="achievement-badge">🏆</span><div><strong>Mestre dos cards</strong><small>Aprenda todos os 12 cards</small></div><span id="thirdBadge">🔒</span></div><div class="focus-tip"><span>✦ DICA DE ESTUDO</span><p>Tente explicar a resposta com suas próprias palavras. Isso ajuda a fixar o conteúdo.</p></div></aside>
+      </div>
+    </div></section>
+
+    <section class="wrap section" id="desafio">
+      <div class="section-title"><div><span class="kicker">03 / TESTE SEU CONHECIMENTO</span><h2>Desafio relâmpago <em>⚡</em></h2><p>Quatro perguntas. Uma chance de mostrar o que aprendeu.</p></div><div class="quiz-score">PONTUAÇÃO <strong id="quizScore">0</strong></div></div>
+      <div class="quiz-layout"><div class="quiz-art"><span class="quiz-art-symbol">?</span><span class="kicker">QUIZ • TECNOLOGIA</span><h3>Você está pronto para o próximo nível?</h3><p>Responda sem pressa. Cada acerto vale 10 pontos de experiência.</p><div class="quiz-dots"><i class="active"></i><i></i><i></i><i></i></div></div><div class="quiz-box"><div class="quiz-top"><span id="quizTopic">CSS • LAYOUT</span><span id="quizStep">PERGUNTA 01 / 04</span></div><h3 id="quizQuestion">Qual propriedade do Flexbox alinha itens no eixo principal?</h3><div id="quizAnswers" class="quiz-answers"></div><p id="quizMessage" aria-live="polite"></p><button id="quizNext" class="btn btn-main" hidden>Próxima pergunta →</button></div></div>
+    </section>
+
+    <section class="wrap section about-section" id="sobre"><div class="about-copy"><span class="kicker">04 / SOBRE O PROJETO</span><h2>Tecnologia para <em>abrir caminhos.</em></h2><p>O CONecta Aí é um projeto escolar pensado para tornar o aprendizado de tecnologia mais visual, acessível e divertido. O conteúdo reúne conceitos introdutórios de desenvolvimento web em uma experiência interativa.</p><div class="about-values"><span>✦ Curiosidade</span><span>✦ Prática</span><span>✦ Criatividade</span></div></div><div class="student-card"><div class="student-avatar">JV</div><span class="kicker">DESENVOLVIDO POR</span><h3>João Victor</h3><p>Estudante • Turma 3E</p><div class="student-line"></div><div class="student-school"><span>🏫</span><div><small>ESCOLA</small><strong>EE Prof. Alípio de Oliveira e Silva</strong></div></div><div class="student-school"><span>📅</span><div><small>ANO LETIVO</small><strong>2026</strong></div></div></div></section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><a class="brand" href="#inicio"><span class="brand-mark">C<span>✦</span></span><span>CONecta<span class="brand-light">Aí</span><small>ACADEMIA DIGITAL</small></span></a><p>Feito para aprender, criado para conectar.</p><span>JOÃO VICTOR • 3E • 2026</span></div></footer>
+  <div class="toast" id="toast" role="status"></div>
+</body>
+</html>
